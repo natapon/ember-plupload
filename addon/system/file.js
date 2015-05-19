@@ -13,7 +13,7 @@ const settingsToConfig = function (settings = {}) {
   let url = settings.url;
   let method = settings.method || 'POST';
   let accepts = settings.accepts || ['application/json', 'text/javascript'];
-  let contentType = settings.contentType || get(this, 'type');
+  let contentType = settings.contentType || null;
   let headers = settings.headers || {};
   let data = settings.data || {};
   let maxRetries = settings.maxRetries || 0;
